@@ -1,27 +1,28 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Home = () => {
   return (
-    <>
+    <div>
       <header className="App-header relative flex h-full w-full overflow-hidden">
-      <nav
-        className="relative z-20 top-0 right-0 w-full inline-block px-10 py-5 text-2xl text-white bg-transparent bg-opacity-50 rounded-xl">
-         <div className="flex justify-between">
-           <img src={logo} className="h-20 lg:h-32" alt="logo" />
-            <ul className="flex items-center">
-              <li className="px-4 py-4">
-                <a className="text-menu--item tracking-widest hover:font-thin" href="#menu">Menu</a>
-              </li>
-              <li className="px-4 py-4">
-                <a className="text-menu--item tracking-widest hover:font-thin" href="#javascript">Reservasi</a>
-              </li>
-              <li className="px-4 py-4">
-                <a className="text-menu--item tracking-widest hover:font-thin" href="#javascript">Kontak</a>
-              </li>
-            </ul>
-         </div>
-      </nav>
+        <nav
+          className="relative z-20 top-0 right-0 w-full inline-block px-10 py-5 text-2xl text-white bg-transparent bg-opacity-50 rounded-xl">
+          <div className="flex justify-between">
+            <img src={logo} className="h-20 lg:h-32" alt="logo" />
+              <ul className="flex items-center">
+                <li className="px-4 py-4">
+                  <a className="text-menu--item tracking-widest hover:font-thin" href="#menu">Menu</a>
+                </li>
+                <li className="px-4 py-4">
+                  <a className="text-menu--item tracking-widest hover:font-thin" href="#javascript">Reservasi</a>
+                </li>
+                <li className="px-4 py-4">
+                  <a className="text-menu--item tracking-widest hover:font-thin" href="#javascript">Kontak</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
       </header>
       <main className="container mx-auto">
         <section className="py-10">
@@ -114,8 +115,8 @@ function App() {
           </p>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
 
-export default App;
+export default Home;
